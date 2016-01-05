@@ -12,14 +12,17 @@ TARGET = accountsmanager
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
-        mainwindow.cpp \
-    accountsmanager.cpp \
-    categoriesdialog.cpp
+SOURCES += \
+    src/main.cpp\
+    src/mainwindow.cpp \
+    src/accountsmanager.cpp \
+    src/categoriesdialog.cpp
 
-HEADERS  += mainwindow.h \
-    accountsmanager.h \
-    categoriesdialog.h
+HEADERS  += \
+    src/mainwindow.h \
+    src/accountsmanager.h \
+    src/categoriesdialog.h
 
-FORMS    += mainwindow.ui \
-    categoriesdialog.ui
+FORMS    += \
+    src/mainwindow.ui \
+    src/categoriesdialog.ui

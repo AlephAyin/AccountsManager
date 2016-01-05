@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS caterogies (
+CREATE TABLE IF NOT EXISTS categories (
     id              INTEGER PRIMARY KEY AUTOINCREMENT,
     name            TEXT UNIQUE
 );
