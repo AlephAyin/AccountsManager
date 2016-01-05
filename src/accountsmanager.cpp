@@ -8,7 +8,14 @@ void AccountsManager::setDatabase( QSqlDatabase * db ) {
 }
 
 bool AccountsManager::isDatabaseConnected() {
-
     return this->db->isOpen();
+}
 
+QSqlRelationalTableModel * AccountsManager::getCategories() {
+
+    QSqlRelationalTableModel * categories = new QSqlRelationalTableModel();
+    categories->setTable( "categories" );
+    categories->select();
+
+    return categories;
 }
